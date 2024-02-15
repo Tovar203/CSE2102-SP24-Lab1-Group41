@@ -25,4 +25,4 @@ Get numbers
 	move i to continue after the number is captured
 
 Program iterates through inputs
-Saves numbers up until it encounters ')' or a math symbol (+-/*)
+Saves numbers up until it encounters '(', ')' or a math symbol (+-/*)
