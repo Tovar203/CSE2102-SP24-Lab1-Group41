@@ -26,3 +26,30 @@ Get numbers
 
 Program iterates through inputs
 Saves numbers up until it encounters '(', ')' or a math symbol (+-/*)
+-----------------
+''.join(v) creates joins all characters in character array to be one string
+
+Expressions can have
+    Character merges into strings
+    operations performed - could potentially be own class (+-*/)
+    do nothing - program just displays num
+
+Operations:
+    + 
+    -
+    *
+    /
+
+Merging Strings (maybe):
+    makes strings in array into 1 string
+
+Find what kind of connection expressions & operations have
+
+Unary Operator Defs:
+    https://www.techopedia.com/definition/25643/unary-operator-c#:~:text=What%20Does%20Unary%20Operator%20Mean,%2C%20%E2%80%94%20and%20the%20cast%20operator.
+
+Binary operators:
+    take 2 inputs and outputs one
+
+Binary & Unary operators do share same symbols for +-*/
+
