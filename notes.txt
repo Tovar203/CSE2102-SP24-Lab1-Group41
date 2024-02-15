@@ -1,0 +1,28 @@
+
+only can input numbers 0 - 9
+v1,v2 = zero
+c = empty string | serves no purpose
+i=t=sum_val = zero
+v= array of 100 empty strings
+
+t is used for the indices in v
+
+-------
+for loop goes through all chars of expression
+	if saves the first negative input
+-------
+
+Expression
+
+Get priorities (?)
+
+Operations
+
+Get numbers
+
+(disregard as bug) first elif & 2nd elif:
+	get the full number from a section of input
+	move i to continue after the number is captured
+
+Program iterates through inputs
+Saves numbers up until it encounters ')' or a math symbol (+-/*)
