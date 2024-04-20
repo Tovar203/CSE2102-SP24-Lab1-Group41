@@ -1,0 +1,60 @@
+Parameters:
+Departing Location:                 
+BDL.							    [property Hartford]
+PDV.							    [property Providence]
+Invalid location.					[error]
+
+
+Arriving Location:
+ATL.                                [if Hartford]
+EWR.								[if Providence]
+MSP.								[if Hartford || Providence]
+Invalid location.					[error]
+	
+
+Departure Date:
+Today.						[property today]
+1mo future.					[property 1mo]
+11mo future.				[property 11mo]
+Invalid date.	 			[error]
+
+Return Date:
+	Today.					[if !1mo && !11mo]
+      1mo future.			[if !11mo]
+      11mo future. 					
+      Invalid date.	        [error]                        
+
+Search Options:	
+	Shop with miles:
+		Selected.   [property SWM]
+		notSelected.
+
+	Refundable Fares:
+		Selected.   [if !SWM][property RF]
+		notSelected. [if SWM]
+
+	My Dates Are Flexible:
+		Selected.   [property FD]
+		notSelected.[if !SWM]
+
+	Passengers:
+		1-9			
+
+Visibility:
+	Include Nearby Airports:
+		Visible.	[if !FD || SWM][property vINA]
+		notVisible. [if FD && !SWM][property nvINA]
+
+Meeting Code:
+	Visible. [if !SWM][property vMC]
+	notVisible. [if SWM][property nvMC]
+
+
+	Include Nearby Airports: 
+		Selected. [if vINA && !FD]
+		Not selected. [if vINA]
+
+	
+Meeting Code:
+	Filled. [if !SWM]
+	Empty.	[if !SWM]
